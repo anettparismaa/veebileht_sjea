@@ -11,7 +11,8 @@
   /* Hide the images by default */
   .mySlides {
     display: none;
-    position: center;
+    margin: auto;
+    width: 30%;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
