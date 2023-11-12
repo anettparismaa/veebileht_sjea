@@ -5,12 +5,16 @@
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
+
+   
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
-    position: center;
+    margin: auto;
+    width: 30%;
+   
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -86,11 +90,10 @@
     width: 100%;
     max-width: 1000px;
     max-height: 1000px;
-    object-fit: cover;
-    display: block;
-
   }
 
   .img{
-    width:100%
+    width:100%;
   }
+
+  
