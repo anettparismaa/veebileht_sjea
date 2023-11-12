@@ -8,12 +8,66 @@
 
 <h1>Kassid</h1>
 <p>This is a paragraph.</p>
+
 <nav>
     <a href="index.html">Pealeht</a> |
     <a href="koerad.html">Koerad</a> |
     <a href="kassid.html">Kassid</a> |
     <a href="muu.html">Muud loomad</a>
   </nav>
+  <div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p>Click on the images below:</p>
+  </div>
+  
+  
+ 
+  <div class="row">
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/3772262/pexels-photo-3772262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/96428/pexels-photo-96428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/96428/pexels-photo-96428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/3772262/pexels-photo-3772262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/3772262/pexels-photo-3772262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/96428/pexels-photo-96428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/3772262/pexels-photo-3772262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/96428/pexels-photo-96428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      <img src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%" onclick="myFunction(this);">
+ 
+    </div>
+
+
+    
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
 
 
 </body>
