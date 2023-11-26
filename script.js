@@ -22,10 +22,17 @@ fetch('imageData.json')
 function showImage(index) {
     const fullImage = document.getElementById('full-image');
     const nimi = document.getElementById('nimi');
+    const vanus = document.getElementById('vanus');
+    const omanik = document.getElementById('omanik');
+    const fakt = document.getElementById('fakt');
+    const kategooria = document.getElementById('kategooria');
 
     // Update full-size image source and caption
     fullImage.src = data[index].path;
     nimi.textContent = data[index].nimi;
+    vanus.textContent = data[index].vanus;
+    omanik.textContent = data[index].omanik;
+    fakt.textContent = data[index].fakt;
 
     // Highlight selected thumbnail in gallery
     const thumbnails = document.querySelectorAll('.thumbnail');
