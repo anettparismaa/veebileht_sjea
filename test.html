@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koerte Galerii</title>
+    <title>Koerad</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <h1>Koerad</h1>
 
-<div id="main-container">
-    <div id="full-image-container">
-        <img id="full-image" alt="Full-size Image">
-        <p id="caption"></p>
-        <div id="left-arrow" class="arrow" onclick="prevImage()">❮</div>
-        <div id="right-arrow" class="arrow" onclick="nextImage()">❯</div>
+    <nav id="nav-menu">
+        <a href="index.html">Pealeht</a> |
+        <a href="koerad.html">Koerad</a> |
+        <a href="kassid.html">Kassid</a> |
+        <a href="muu.html">Muud loomad</a> |
+        <a href="test.html">Test</a>
+      </nav>
+
+
+    <div id="main-container">
+        <div id="full-image-container">
+            <img id="full-image" alt="Full-size Image">
+            <p id="nimi"></p>
+            <div id="left-arrow" class="arrow" onclick="prevImage()">❮</div>
+            <div id="right-arrow" class="arrow" onclick="nextImage()">❯</div>
+        </div>
+
+        <div id="gallery"></div>
     </div>
 
-    <div id="gallery"></div>
-</div>
 
-<script src="script.js"></script>
 
 </body>
 </html>

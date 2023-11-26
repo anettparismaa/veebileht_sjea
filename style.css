@@ -2,7 +2,6 @@
     max-width: 800px;
     margin: auto;
     text-align: center;
-    position: relative;
 }
 
 #full-image-container {
@@ -35,22 +34,37 @@
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 2em;
     cursor: pointer;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border: none;
-    outline: none;
+    color: black;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999; /* Ensures the arrows are above other elements */
+
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+}
+
+.arrow:hover{
+    background-color: rgba(176, 150, 150, 0.799);
 }
 
 #left-arrow {
-    left: 0px;
+    left: 10px;
 }
 
 #right-arrow {
-    right: 0px;
+    right: 10px;
+}
+
+#nav-menu {
+    /* Your existing styles for the navigation menu */
+
+    /* Add space below the navigation menu */
+    margin-bottom: 20px; /* Adjust the value as needed */
 }

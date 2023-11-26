@@ -1,14 +1,26 @@
 [
     {
-        "path": "https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "caption": "Caption for Image 1"
-    },
-    {
-        "path": "https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg",
-        "caption": "Caption for Image 2"
-    },
-    {
         "path": "https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg",
-        "caption": "Caption for Image 3"
+        "nimi": "Name for Image 1",
+        "vanus": 25,
+        "fakt": "Interesting fact about Image 1",
+        "omanik": "Owner of Image 1",
+        "kategooria": "koer"
+    },
+    {
+        "path": "https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "nimi": "Name for Image 2",
+        "vanus": 30,
+        "fakt": "Interesting fact about Image 2",
+        "omanik": "Owner of Image 2",
+        "kategooria": "kass"
+    },
+    {
+        "path": "https://images.pexels.com/photos/2951921/pexels-photo-2951921.jpeg",
+        "nimi": "Name for Image 3",
+        "vanus": 28,
+        "fakt": "Interesting fact about Image 3",
+        "omanik": "Owner of Image 3",
+        "kategooria": "koer"
     }
 ]

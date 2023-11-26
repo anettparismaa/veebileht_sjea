@@ -21,11 +21,11 @@ fetch('imageData.json')
 
 function showImage(index) {
     const fullImage = document.getElementById('full-image');
-    const caption = document.getElementById('caption');
+    const nimi = document.getElementById('nimi');
 
     // Update full-size image source and caption
     fullImage.src = data[index].path;
-    caption.textContent = data[index].caption;
+    nimi.textContent = data[index].nimi;
 
     // Highlight selected thumbnail in gallery
     const thumbnails = document.querySelectorAll('.thumbnail');
