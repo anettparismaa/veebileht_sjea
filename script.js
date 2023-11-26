@@ -2,7 +2,7 @@ let data;
 let currentIndex = 0;
 
 // Fetch JSON file with image data
-fetch('imageData.json')
+fetch('loomad.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
@@ -28,30 +28,34 @@ function showImage(index) {
     const kategooria = document.getElementById('kategooria');
 
     // Update full-size image source and caption
-    fullImage.src = data[index].path;
-    nimi.textContent = data[index].nimi;
-    vanus.textContent = data[index].vanus;
-    omanik.textContent = data[index].omanik;
-    fakt.textContent = data[index].fakt;
+    const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
+        fullImage.src = filteredData[index].path;
+        nimi.textContent = "Nimi: " + filteredData[index].nimi;
+        vanus.textContent = "Nimi: " +  filteredData[index].vanus;
+        omanik.textContent = filteredData[index].omanik;
+        fakt.textContent = filteredData[index].fakt;
 
-    // Highlight selected thumbnail in gallery
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach((thumbnail, i) => {
-        if (i === index) {
-            thumbnail.style.border = '2px solid #333';
-        } else {
-            thumbnail.style.border = '2px solid transparent';
-        }
-    });
+        // Highlight selected thumbnail in gallery
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach((thumbnail, i) => {
+            if (i === index) {
+                thumbnail.style.border = '2px solid #333';
+            } else {
+                thumbnail.style.border = '2px solid transparent';
+            }
+        });
 
-    currentIndex = index;
+        currentIndex = index;
+    
 }
 
 function createGallery() {
     const gallery = document.getElementById('gallery');
 
+    const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
+
     // Create thumbnail for each image
-    data.forEach((item, index) => {
+    filteredData.forEach((item, index) => {
         const thumbnail = document.createElement('img');
         thumbnail.src = item.path;
         thumbnail.alt = `Thumbnail ${index + 1}`;
@@ -59,6 +63,9 @@ function createGallery() {
         gallery.appendChild(thumbnail);
     });
 }
+
+
+
 
 function prevImage() {
     currentIndex = (currentIndex - 1 + data.length) % data.length;

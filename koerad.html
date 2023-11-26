@@ -1,124 +1,38 @@
-<!-- allikas: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
 <!DOCTYPE html>
-<html lang="et">
-<meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <script src="myscripts.js"></script>
-  <title>Koerad</title>
+<html lang="ee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = "kategooria">Koerad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
+    <h1>Koerad</h1>
 
-  <h1>Koerad</h1>
+    <nav id="nav-menu">
+        <a href="index.html">Pealeht</a> |
+        <a href="koerad.html">Koerad</a> |
+        <a href="kassid.html">Kassid</a> |
+        <a href="muu.html">Muud loomad</a>
+      </nav>
 
-  <nav>
-    <a href="index.html">Pealeht</a> |
-    <a href="koerad.html">Koerad</a> |
-    <a href="kassid.html">Kassid</a> |
-    <a href="muu.html">Muud loomad</a>
-  </nav>
 
-  <div class="container">
+    <div id="main-container">
+        <div id="full-image-container">
+            <img id="full-image" alt="Full-size Image">
+            <p id="nimi"></p>
+            <p id="vanus"></p>
+            <p id="omanik"></p>
+            <p id="fakt"></p>
+            <div id="left-arrow" class="arrow" onclick="prevImage()">❮</div>
+            <div id="right-arrow" class="arrow" onclick="nextImage()">❯</div>
+        </div>
 
-    <!-- Full-width images with number text -->
-    <div>
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Koer 1">
-
-      </div>
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/2951921/pexels-photo-2951921.jpeg" alt="Koer 2">
-      </div>
-
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg" alt="Koer 3">
-      </div>
-
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg" alt="Koer 4">
-      </div>
-      
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Koer 5">
-      </div>
-
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/2951921/pexels-photo-2951921.jpeg" alt="Koer 6">
-      </div>
-      
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg" alt="Koer 7">
-      </div>
-
-      <div class="mySlides">
-        <img class="slaid"
-          src="https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg" alt="Koer 8">
-      </div>
+        <div id="gallery"></div>
     </div>
 
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Image text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail images -->
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg"
-          onclick="currentSlide(1)" alt="Koer 1">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/2951921/pexels-photo-2951921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(2)" alt="Koer 2">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(3)" alt="Koer 3">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(4)" alt="Koer 4">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg"
-          onclick="currentSlide(5)" alt="Koer 5">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/2951921/pexels-photo-2951921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(6)" alt="Koer 6">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(7)" alt="Koer 7">
-      </div>
-      <div class="column">
-        <img class="demo cursor"
-          src="https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          onclick="currentSlide(8)" alt="Koer 8">
-      </div>
-    </div>
-  </div>
 
 
 </body>
-
 </html>
