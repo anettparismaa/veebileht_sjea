@@ -1,0 +1,56 @@
+#main-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#full-image-container {
+    position: relative;
+}
+
+#full-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+    max-height: 600px;
+}
+
+#caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#left-arrow {
+    left: 10px;
+}
+
+#right-arrow {
+    right: 10px;
+}

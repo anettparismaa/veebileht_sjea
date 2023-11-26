@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+    <div id="full-image-container">
+        <img id="full-image" alt="Full-size Image">
+        <p id="caption"></p>
+        <div id="left-arrow" class="arrow" onclick="prevImage()">❮</div>
+        <div id="right-arrow" class="arrow" onclick="nextImage()">❯</div>
+    </div>
+
+    <div id="gallery"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
