@@ -2,7 +2,7 @@
     {
         "path": "Kassid/Kertu_kass.png",
         "nimi": "Pärl",
-        "vanus": 5 "kuud",
+        "vanus":"5 kuud",
         "fakt": "Talle meeldib väga juhtmeid närida.",
         "omanik": "Kertu Ceitlyn",
         "kategooria": "kass"
@@ -158,5 +158,5 @@
         "fakt": "Ta on liigi poolest palli püüton kes on tuntud just selle poolest et on pigem arad tõmbavad väga sageli end palli kokku (eriti kui nendega tegeleda), aga Sissi pole seda kunagi teinud ja on just väga uudishimulik ja inimsõbralik..",
         "omanik": "Osvald",
         "kategooria": "muu"
-    },
+    }
 ]
