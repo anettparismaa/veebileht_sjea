@@ -39,9 +39,9 @@ function showImage(index) {
         const thumbnails = document.querySelectorAll('.thumbnail');
         thumbnails.forEach((thumbnail, i) => {
             if (i === index) {
-                thumbnail.style.border = '2px solid #333';
+                thumbnail.style.border = '4px solid #1B4965';
             } else {
-                thumbnail.style.border = '2px solid transparent';
+                thumbnail.style.border = '4px solid transparent';
             }
         });
 

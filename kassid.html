@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id = "kategooria">Kassid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Koerad</h1>
+    <h1 class = "h1">Kassid</h1>
 
-    <nav id="nav-menu">
+    <nav class="nav-menu">
         <a href="index.html">Pealeht</a> |
         <a href="koerad.html">Koerad</a> |
         <a href="kassid.html">Kassid</a> |
@@ -21,10 +22,12 @@
     <div id="main-container">
         <div id="full-image-container">
             <img id="full-image" alt="Full-size Image">
-            <p id="nimi"></p>
-            <p id="vanus"></p>
-            <p id="omanik"></p>
-            <p id="fakt"></p>
+            <div class="tekst">
+              <p id="nimi"></p>
+              <p id="vanus"></p>
+              <p id="omanik"></p>
+              <p id="fakt"></p>
+            </div>
             <div id="left-arrow" class="arrow" onclick="prevImage()">❮</div>
             <div id="right-arrow" class="arrow" onclick="nextImage()">❯</div>
         </div>
