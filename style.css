@@ -205,8 +205,9 @@ html {
   background-size: cover;
 }
 
+/* pildi allikas: https://www.freepik.com/free-vector/bons-foot-prints-pattern-background_1123963.htm#query=paw%20print%20pattern&position=10&from_view=keyword&track=ais&uuid=3978935f-ad30-4551-a905-2e9cb98fbc92 */
 .bgimg-1 {
-  background-image: url("Pildid/Pealehe_pilt.png");
+  background-image: url("Pildid/pealeht.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
