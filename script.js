@@ -1,3 +1,4 @@
+// allikas: Chat GPT-3.5 + Anett (küsitud)
 let data;
 let thumbnails;
 let currentIndex = 0;
@@ -37,7 +38,7 @@ function showImage(index) {
         omanik.textContent = "Omanik: " + filteredData[index].omanik;
         fakt.textContent = filteredData[index].fakt;
 
-        // Pisipildi välja toomine galeriist
+        // Pisipildi väljatoomine galeriist
         const thumbnails = document.querySelectorAll('.thumbnail');
         thumbnails.forEach((thumbnail, i) => {
             if (i === index) {
@@ -68,7 +69,7 @@ function createGallery() {
 
 
 
-// Edasi/tagasi nuppu funktsioonid
+// Edasi/tagasi nupu funktsioonid
 function prevImage() {
     currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
     showImage(currentIndex);
