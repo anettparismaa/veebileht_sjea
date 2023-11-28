@@ -2,25 +2,25 @@ let data;
 let thumbnails;
 let currentIndex = 0;
 
-// Fetch JSON file with image data
+//  JSON faili võtmine
 fetch('loomad.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
-        // Create gallery
+        // Gallerii tegemine
         createGallery();
 
-        // Initialize the full-size image and caption
+        // Pildi ja pealkirja näitamine
         showImage(currentIndex);
         
-        // Set up event listeners for gallery thumbnails
+        // Galerii pisipildite loomine
         thumbnails = document.querySelectorAll('.thumbnail');
         thumbnails.forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showImage(index));
         });
     })
     .catch(error => console.error('Error fetching JSON:', error));
-
+// Pildi ja teksti näitamine
 function showImage(index) {
     const fullImage = document.getElementById('full-image');
     const nimi = document.getElementById('nimi');
@@ -29,7 +29,7 @@ function showImage(index) {
     const fakt = document.getElementById('fakt');
     const kategooria = document.getElementById('kategooria');
 
-    // Update full-size image source and caption
+    // Pildi allika ja pealkirja värskendamine
     const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
         fullImage.src = filteredData[index].path;
         nimi.textContent = "Nimi: " + filteredData[index].nimi;
@@ -37,7 +37,7 @@ function showImage(index) {
         omanik.textContent = filteredData[index].omanik;
         fakt.textContent = filteredData[index].fakt;
 
-        // Highlight selected thumbnail in gallery
+        // Pisipildi välja toomine galeriist
         const thumbnails = document.querySelectorAll('.thumbnail');
         thumbnails.forEach((thumbnail, i) => {
             if (i === index) {
@@ -50,13 +50,13 @@ function showImage(index) {
         currentIndex = index;
     
 }
-
+// Galerii funktsioon
 function createGallery() {
     const gallery = document.getElementById('gallery');
 
     const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
 
-    // Create thumbnail for each image
+    // Pisipiltide loomine iga pildi kohta
     filteredData.forEach((item, index) => {
         const thumbnail = document.createElement('img');
         thumbnail.src = item.path;
@@ -68,7 +68,7 @@ function createGallery() {
 
 
 
-
+// Edasi/tagasi nuppu funktsioonid
 function prevImage() {
     currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
     showImage(currentIndex);

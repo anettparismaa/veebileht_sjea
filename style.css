@@ -41,7 +41,7 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 999; /* Ensures the arrows are above other elements */
+    z-index: 999; /* Noolte kindel väljatoomine teiste elementide peale*/
 
     width: auto;
     padding: 16px;
@@ -64,10 +64,10 @@
 }
 
 .nav-menu {
-    /* Your existing styles for the navigation menu */
+    /* Praegune stiil navigeerimis menüüle */
 
-    /* Add space below the navigation menu */
-    margin-bottom: 20px; /* Adjust the value as needed */
+    /* Vahe lisamine menüü alla*/
+    margin-bottom: 20px; /* Vahe suuruse muutmiseks */
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -99,18 +99,18 @@
 }
 
 .nav-menu a::before {
-    content: ''; /* Create an empty pseudo-element */
+    content: ''; /* pseudo-elementi loomine */
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px; /* Height of the border */
-    background-color: transparent; /* Transparent initially */
-    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    height: 2px; /* ääre kõrgus */
+    background-color: transparent; /* Läbinähtavus */
+    transition: background-color 0.3s ease; /* Sujuva värvi üleminek olles kursoriga selle peal*/
 }
 
 .nav-menu a:hover::before {
-    background-color: #1b4965; /* Change border color on hover */
+    background-color: #1b4965; /* Ääre värvi muutumine olles kursoriga selle peal */
 }
 
 .font { 
@@ -180,30 +180,30 @@ body {
     
 }
 
-/*Pealehe style*/
+/*Pealehe stiil*/
 /* Allikas: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 * {
     box-sizing: border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
+  /* Pildi konteineri paigutamine (vajalik vasak- ja paremnoole positsioneerimiseks) */
   .container {
     position: relative;
   }
   
-  /* Hide the images by default */
+  /* Vaikimisi piltide peitmine */
   .mySlides {
     display: none;
     margin: auto;
     width: 30%;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
+  /* Lisage kursor pisipiltide kohal olles kursoriga selle peal */
   .cursor {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
+  /* Edasi tagasi nupp (piltide jaoks) */
   .prev,
   .next {
     cursor: pointer;
@@ -220,20 +220,20 @@ body {
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Asetage nupp "edasi" paremale */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* Kursoriga selle peal olles, lisage must taustavärv, mis on veidi läbipaistev */
   .prev:hover,
   .next:hover {
     background-color: rgba(167, 155, 155, 0.8);
   }
 
   
-  /* Container for image text */
+  /* Konteiner pilditeksti jaoks */
   .caption-container {
     text-align: center;
     background-color: #222;
@@ -247,13 +247,13 @@ body {
     clear: both;
   }
   
-  /* Six columns side by side */
+  /* Kuus veergu kõrvuti */
   .column {
     float: left;
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+  /* Lisage pisipiltide jaoks läbipaistvuse efekt */
   .demo {
     opacity: 0.6;
     height: 200px;
