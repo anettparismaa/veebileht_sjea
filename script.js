@@ -1,4 +1,5 @@
 let data;
+let thumbnails;
 let currentIndex = 0;
 
 // Fetch JSON file with image data
@@ -6,13 +7,14 @@ fetch('loomad.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
-        // Initialize the full-size image and caption
-        showImage(currentIndex);
         // Create gallery
         createGallery();
 
+        // Initialize the full-size image and caption
+        showImage(currentIndex);
+        
         // Set up event listeners for gallery thumbnails
-        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails = document.querySelectorAll('.thumbnail');
         thumbnails.forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showImage(index));
         });
@@ -31,7 +33,7 @@ function showImage(index) {
     const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
         fullImage.src = filteredData[index].path;
         nimi.textContent = "Nimi: " + filteredData[index].nimi;
-        vanus.textContent = "Nimi: " +  filteredData[index].vanus;
+        vanus.textContent = filteredData[index].vanus;
         omanik.textContent = filteredData[index].omanik;
         fakt.textContent = filteredData[index].fakt;
 
@@ -68,11 +70,11 @@ function createGallery() {
 
 
 function prevImage() {
-    currentIndex = (currentIndex - 1 + data.length) % data.length;
+    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
     showImage(currentIndex);
 }
 
 function nextImage() {
-    currentIndex = (currentIndex + 1) % data.length;
+    currentIndex = (currentIndex + 1) % thumbnails.length;
     showImage(currentIndex);
 }
