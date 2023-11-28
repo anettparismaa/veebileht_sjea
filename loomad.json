@@ -2,41 +2,41 @@
     {
         "path": "Pildid/Kassid/Kertu_kass.png",
         "nimi": "Pärl",
-        "vanus":"Vanus: 5 kuud",
+        "vanus":"5 kuud",
         "fakt": "Talle meeldib väga juhtmeid närida.",
-        "omanik": "Omanik: Kertu Ceitlyn",
+        "omanik": "Kertu Ceitlyn",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Kristo_kass.jpg",
         "nimi": "Siisi",
-        "vanus": "Vanus: Teadmata",
+        "vanus": "Teadmata",
         "fakt": "Ta on suur konserviõgard.",
-        "omanik": "Omanik: Anonüümne",
+        "omanik": "Anonüümne",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Liina_kass.jpg",
         "nimi": "Musi",
-        "vanus": "Vanus: 6 aastat",
+        "vanus": "6 aastat",
         "fakt": "Ta ARMASTAB igasuguseid mahlaseid puuvilju- arbuus, melon, ananass. Lisaks armastab ta maisi.",
-        "omanik": "Omanik: Liina",
+        "omanik": "Liina",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Marguse_kass.jpg",
         "nimi": "Pirru ehk Piraat",
-        "vanus": "Vanus: 12 aastat",
+        "vanus": "12 aastat",
         "fakt": "Temaga Soome minnes vajas ta passi ja Jõgeva loomaarst märkis ta sünniaastaks 2002, tehes kassi juriidiliselt minust vanemaks.",
-        "omanik": "Omanik: Margus",
+        "omanik": "Margus",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Marki_kass.jpg",
         "nimi": "Cindy",
-        "vanus": "Vanus: 11 aastat",
+        "vanus": "11 aastat",
         "fakt": "Cindy on päeviti üpris rahuliku iseloomuga kuid vahel meeldib talle hilisõhtuti/varahommikuti mööda maja paarkümmend kilomeetrit tunnis ringi joosta, kasutades järskude kurvide võtmiseks kõikvõimalike tasandeid mis talle ette jäävad - diivan, laud, seinad, perekond jm.",
-        "omanik": "Omanik: Mark",
+        "omanik": "Mark",
         "kategooria": "Kassid"
     },
     {
@@ -44,119 +44,119 @@
         "nimi": "Oranz kass - Meister, Valge kass- Astra",
         "vanus": "Vanused: Astra- 6 kuud, Meister- 4 aastat",
         "fakt": "Meistrile meeldib ümber lauajala oma saba taga ajada. Astra varastas vahel Meistri toitu ja läks nii paksuks, et ei jaksanud enam diivanile hüpata, Nüüd õnneks on asi kontrolli all ja Astra on jälle vormis.",
-        "omanik": "Omanik: Marten",
+        "omanik": "Marten",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Olivia_kass.jpg",
         "nimi": "Espurr",
-        "vanus": "Vanus: 5 aastat",
+        "vanus": "5 aastat",
         "fakt": "Üks huvitav fakt tema kohta on näiteks see, et ta tunneb ära sõna 'ämblik'. Kuna selle sõna kuulmise peale arvab ta alati, et me leidsime jälle ämbliku, keda ta võib jälle jahtima minna, on mu peres hakatud tavavestlustes vältima eestikeelset sõna 'ämblik' ning kombeks on öelda hoopis 'spindel'.",
-        "omanik": "Omanik: Olivia Iroona",
+        "omanik": "Olivia Iroona",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Oskari_kass.jpg",
         "nimi": "Villi",
-        "vanus": "Vanus: 10 aastat",
+        "vanus": "10 aastat",
         "fakt": "Kui ta oli väike, puges ta kuidagi auto sisse (mitte auto uksest sisse, reaalselt sisse) ja sõitis linna. Õnneks jäi ta juba parklas vahele ja viisime ta koju tagasi.",
-        "omanik": "Omanik: Oskar",
+        "omanik": "Oskar",
         "kategooria": "kassid"
     },
     {
         "path": "Pildid/Kassid/Pauline_kass.jpg",
         "nimi": "Ruby ehk Rublenaja",
-        "vanus": "Vanus: Teadmata",
+        "vanus": "Teadmata",
         "fakt": "Ta tegelikult ei ole minu isiklik kass, vaid mu töökoha kass :D ehk siis ta omanik on trüki- ja paberikunstikeskus TYPA. Nimi tuleneb ühe kirjatüübi nimest. Kuigi ta enamasti elabki 24/7 TYPAs, siis fotol on ta jõulude ajal minu juures kodus. Tavaliselt pühade ajaks, kui kedagi tööl ei ole, jääb ta kellegi juurde.",
-        "omanik": "Omanik: TYPA",
+        "omanik": "TYPA",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Rasmuse_kass.jpg",
         "nimi": "Silvia",
-        "vanus": "Vanus: 14 aastat",
+        "vanus": "14 aastat",
         "fakt": "Üks kord naaber pani ta sauna kinni, kuna arvas, et kass oli kodust ära jooksnud.",
-        "omanik": "Omanik: Rasmus",
+        "omanik": "Rasmus",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Sandra_kass.jpg",
         "nimi": "Leenu",
-        "vanus": "Vanus: 8 aastat",
+        "vanus": "8 aastat",
         "fakt": "Leenu on ise küll väike, aga ta oskab võõraid koeri hoovi pealt ära hirmutada.",
-        "omanik": "Omanik: Sandra",
+        "omanik": "Sandra",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Kassid/Sebastiani_kass.jpg",
         "nimi": "Etu ehk Prints Edward",
-        "vanus": "Vanus: 7 aastat",
+        "vanus": "7 aastat",
         "fakt": "Ta oli väga mänguline ja käis alati igal pool järel.",
-        "omanik": "Omanik: Sebastian",
+        "omanik": "Sebastian",
         "kategooria": "Kassid"
     },
     {
         "path": "Pildid/Koerad/Otto_koer.jpeg",
         "nimi": "Joffa",
-        "vanus": "Vanus: 11 aastat",
+        "vanus": "11 aastat",
         "fakt": "Armastab Jeppi vaniljekohukesi.",
-        "omanik": "Omanik: Otto-Cristofer",
+        "omanik": "Otto-Cristofer",
         "kategooria": "Koerad"
     },
     {
         "path": "Pildid/Koerad/Ron-Aaron_koer.JPG",
         "nimi": "Bosse",
-        "vanus": "Vanus: 7 aastat",
+        "vanus": "7 aastat",
         "fakt": "Ta on totaalselt krutskeid täis.",
-        "omanik": "Omanik: Ron-Aaron",
+        "omanik": "Ron-Aaron",
         "kategooria": "Koerad"
     },
     {
         "path": "Pildid/Koerad/Aneti_koer.png",
         "nimi": "Nässu",
-        "vanus": "Vanus: 11 aastat",
+        "vanus": "11 aastat",
         "fakt": "Ta on varjupaigast võetud ja eelmine nimi oli Toru.",
-        "omanik": "Omanik: Anett",
+        "omanik": "Anett",
         "kategooria": "Koerad"
     },
     {
         "path": "Pildid/Koerad/Reimo_koer.jpg",
         "nimi": "Pondu/Londu",
-        "vanus": "Vanus: 5 aastat",
+        "vanus": "5 aastat",
         "fakt": "Vahepeal näeb välja nagu doge, kui oleks pikakarvalisem.",
-        "omanik": "Omanik: Reimo",
+        "omanik": "Reimo",
         "kategooria": "Koerad"
     },
     {
         "path": "Pildid/Koerad/Anne_koer.jpg",
         "nimi": "Roy",
-        "vanus": "Vanus: 8 aastat",
+        "vanus": "8 aastat",
         "fakt": "See koer sööks okastraadi ka ära, kui sinna natuke rasva peale määrida.",
-        "omanik": "Omanik: Anne-Liis",
+        "omanik": "Anne-Liis",
         "kategooria": "Koerad"
     },
     {
         "path": "Pildid/Muud Loomad/Carl.jpg",
         "nimi": "Carl",
-        "vanus": "Vanus: 4 aastat",
+        "vanus": "4 aastat",
         "fakt": "Ta üritas kunagi põgenda ja kui ma poleks teda viimasel hetkel laua pealt alla ronimas märkanud, oleks see tal ka õnnestunud.",
-        "omanik": "Omanik: Anne-Liis",
+        "omanik": "Anne-Liis",
         "kategooria": "Muud Loomad"
     },
     {
         "path": "Pildid/Muud Loomad/Kätryni_geko.jpg",
         "nimi": "Meblik",
-        "vanus": "Vanus: 4 aastat",
+        "vanus": "4 aastat",
         "fakt": "Harjasgeko. Tal pole silmalaugusid, seega magab ta silmad lahti(ainult 'ripsmed' lähevad alla, aga seda raske märgata).",
-        "omanik": "omanik: Kätryn",
+        "omanik": "Kätryn",
         "kategooria": "Muud Loomad"
     },
     {
         "path": "Pildid/Muud Loomad/Osvald_madu.jpeg",
         "nimi": "Sissi",
-        "vanus": "Vanus: 3 aastat",
+        "vanus": "3 aastat",
         "fakt": "Ta on liigi poolest palli püüton kes on tuntud just selle poolest et on pigem arad tõmbavad väga sageli end palli kokku (eriti kui nendega tegeleda), aga Sissi pole seda kunagi teinud ja on just väga uudishimulik ja inimsõbralik..",
-        "omanik": "Omanik: Osvald",
+        "omanik": "Osvald",
         "kategooria": "Muud Loomad"
     }
 ]

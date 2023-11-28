@@ -1,332 +1,242 @@
 #main-container {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 #full-image-container {
-    position: relative;
+  position: relative;
 }
 
 #full-image {
-    max-width: 100%;
-    margin-bottom: 10px;
-    max-height: 600px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  max-height: 600px;
 }
 
 #caption {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 #gallery {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 .thumbnail {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    cursor: pointer;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  object-fit: cover;
 }
 
 .arrow {
-    font-size: 2em;
-    cursor: pointer;
-    color: #1B4965;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 999; /* Noolte kindel väljatoomine teiste elementide peale*/
+  font-size: 2em;
+  cursor: pointer;
+  color: #1B4965;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  /* Noolte kindel väljatoomine teiste elementide peale*/
 
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    font-weight: bold;
-    font-size: 40px;
-    border-radius: 0 3px 3px 0;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
 }
 
-.arrow:hover{
-    background-color: #76b6de;
+.arrow:hover {
+  background-color: #76b6de;
 }
 
 #left-arrow {
-    left: 10px;
+  left: 10px;
 }
 
 #right-arrow {
-    right: 10px;
+  right: 10px;
 }
 
 .nav-menu {
-    /* Praegune stiil navigeerimis menüüle */
+  /* Praegune stiil navigeerimis menüüle */
 
-    /* Vahe lisamine menüü alla*/
-    margin-bottom: 20px; /* Vahe suuruse muutmiseks */
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 2px 4px #1B4965;
-    background: #CAE9FF;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    color: #1B4965;
-    padding: 40px;
-    box-shadow:
-    inset #1B4965 0 0 0 5px, 
-    inset #225270 0 0 0 1px, 
-    inset #306f96 0 0 0 10px, 
-    inset #306f96 0 0 0 11px, 
-    inset #76b6de 0 0 0 16px, 
-    inset #76b6de 0 0 0 17px, 
-    inset #e5f9f7 0 0 0 21px, 
+  /* Vahe lisamine menüü alla*/
+  margin-bottom: 20px;
+  /* Vahe suuruse muutmiseks */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px #1B4965;
+  background: #CAE9FF;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #1B4965;
+  padding: 40px;
+  box-shadow:
+    inset #1B4965 0 0 0 5px,
+    inset #225270 0 0 0 1px,
+    inset #306f96 0 0 0 10px,
+    inset #306f96 0 0 0 11px,
+    inset #76b6de 0 0 0 16px,
+    inset #76b6de 0 0 0 17px,
+    inset #e5f9f7 0 0 0 21px,
     inset #bfecf7 0 0 0 22px;
-    text-shadow: 3px 3px 1px #98c9e6;
+  text-shadow: 3px 3px 1px #98c9e6;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #1B4965;
-    margin: 0 20px;
-    position: relative;
+  text-decoration: none;
+  color: #1B4965;
+  margin: 0 20px;
+  position: relative;
 }
 
 .nav-menu a::before {
-    content: ''; /* pseudo-elementi loomine */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* ääre kõrgus */
-    background-color: transparent; /* Läbinähtavus */
-    transition: background-color 0.3s ease; /* Sujuva värvi üleminek olles kursoriga selle peal*/
+  content: '';
+  /* pseudo-elementi loomine */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* ääre kõrgus */
+  background-color: transparent;
+  /* Läbinähtavus */
+  transition: background-color 0.3s ease;
+  /* Sujuva värvi üleminek olles kursoriga selle peal*/
 }
 
 .nav-menu a:hover::before {
-    background-color: #1b4965; /* Ääre värvi muutumine olles kursoriga selle peal */
+  background-color: #1b4965;
+  /* Ääre värvi muutumine olles kursoriga selle peal */
 }
 
-.font { 
-    font-family: 'Oswald', sans-serif;
+.font {
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
-    color: #1b4965;
-    background: #CAE9FF
+  color: #1b4965;
+  background: #CAE9FF
 }
 
 .h1 {
-    text-align: center;
-    padding: 10px;
-    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.5);
-    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.5);
-    box-shadow: 1px 2px 5px rgba(0,0,0,.5);
-    
-    /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
-    background: #CAE9FF;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 48px;
-    line-height: 40px;
-    font-weight: bold;
-    color: #1b4965;
-    padding: 40px;
-    box-shadow:
-        inset #1B4965 0 0 0 5px, 
-      inset #225270 0 0 0 1px, 
-      inset #306f96 0 0 0 10px, 
-      inset #306f96 0 0 0 11px, 
-      inset #76b6de 0 0 0 16px, 
-      inset #76b6de 0 0 0 17px, 
-      inset #e5f9f7 0 0 0 21px, 
-      inset #bfecf7 0 0 0 22px;
-    text-shadow: 3px 3px 1px #98c9e6;
+  text-align: center;
+  padding: 10px;
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+
+  /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
+  background: #CAE9FF;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #1b4965;
+  padding: 40px;
+  box-shadow:
+    inset #1B4965 0 0 0 5px,
+    inset #225270 0 0 0 1px,
+    inset #306f96 0 0 0 10px,
+    inset #306f96 0 0 0 11px,
+    inset #76b6de 0 0 0 16px,
+    inset #76b6de 0 0 0 17px,
+    inset #e5f9f7 0 0 0 21px,
+    inset #bfecf7 0 0 0 22px;
+  text-shadow: 3px 3px 1px #98c9e6;
 }
 
 #pl {
-    max-width: 500px;
-    margin: 20px auto 20px auto;
+  max-width: 500px;
+  margin: 20px auto 20px auto;
 }
 
 .tekst {
-    /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
-    font-weight: bold;
-    color: #1b4965;
-    padding: 40px;
-    box-shadow:
-        inset #1B4965 0 0 0 5px, 
-      inset #225270 0 0 0 1px, 
-      inset #306f96 0 0 0 10px, 
-      inset #306f96 0 0 0 11px, 
-      inset #76b6de 0 0 0 16px, 
-      inset #76b6de 0 0 0 17px, 
-      inset #e5f9f7 0 0 0 21px, 
-      inset #bfecf7 0 0 0 22px;
-      text-shadow: 3px 3px 1px #bfecf7;
+  /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
+  font-weight: bold;
+  color: #1b4965;
+  padding: 40px;
+  box-shadow:
+    inset #1B4965 0 0 0 5px,
+    inset #225270 0 0 0 1px,
+    inset #306f96 0 0 0 10px,
+    inset #306f96 0 0 0 11px,
+    inset #76b6de 0 0 0 16px,
+    inset #76b6de 0 0 0 17px,
+    inset #e5f9f7 0 0 0 21px,
+    inset #bfecf7 0 0 0 22px;
+  text-shadow: 3px 3px 1px #bfecf7;
 }
 
 #full-image {
-    max-width: 100%;
-    margin-bottom: 10px;
-    max-height: 600px;
-    border: 5px solid #1B4965;
-    border-radius: 8px;
-    
+  max-width: 100%;
+  margin-bottom: 10px;
+  max-height: 600px;
+  border: 5px solid #1B4965;
+  border-radius: 8px;
+
 }
 
-/*Pealehe stiil*/
-/* Allikas: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Pildi konteineri paigutamine (vajalik vasak- ja paremnoole positsioneerimiseks) */
-  .container {
-    position: relative;
-  }
-  
-  /* Vaikimisi piltide peitmine */
-  .mySlides {
-    display: none;
-    margin: auto;
-    width: 30%;
-  }
-  
-  /* Lisage kursor pisipiltide kohal olles kursoriga selle peal */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Edasi tagasi nupp (piltide jaoks) */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 30%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Asetage nupp "edasi" paremale */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* Kursoriga selle peal olles, lisage must taustavärv, mis on veidi läbipaistev */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(167, 155, 155, 0.8);
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 16px;
+  color: #333;
+}
 
-  
-  /* Konteiner pilditeksti jaoks */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Kuus veergu kõrvuti */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Lisage pisipiltide jaoks läbipaistvuse efekt */
-  .demo {
-    opacity: 0.6;
-    height: 200px;
-    width: 100px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .slaid{
-    width: 100%;
-    max-width: 1000px;
-    max-height: 1000px;
-    object-fit: cover;
-    display: block;
+.bgimg-1 {
+  background-image: url("Pildid/Pealehe_pilt.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  }
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+}
 
-  .img{
-    width:100%
-  }
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .bgimg-1 {
-    background-image: url("Pildid/Pealehe_pilt.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-  
-  .caption {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000;
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}

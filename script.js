@@ -33,8 +33,8 @@ function showImage(index) {
     const filteredData = data.filter(item => item.kategooria === kategooria.textContent);
         fullImage.src = filteredData[index].path;
         nimi.textContent = "Nimi: " + filteredData[index].nimi;
-        vanus.textContent = filteredData[index].vanus;
-        omanik.textContent = filteredData[index].omanik;
+        vanus.textContent = "Vanus: " + filteredData[index].vanus;
+        omanik.textContent = "Omanik: " + filteredData[index].omanik;
         fakt.textContent = filteredData[index].fakt;
 
         // Pisipildi välja toomine galeriist
