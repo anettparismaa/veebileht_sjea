@@ -19,6 +19,7 @@
   margin-bottom: 10px;
 }
 
+/* Alumise galerii piltide asetus */
 #gallery {
   display: flex;
   justify-content: center;
@@ -26,6 +27,7 @@
   padding: 20px;
 }
 
+/* Alumise galerii piltide asetus (laius, pikkus jne)*/
 .thumbnail {
   width: 100px;
   height: 100px;
@@ -34,6 +36,7 @@
   object-fit: cover;
 }
 
+/* Pilte vahetavate noolte paiknemine ja stiil*/
 .arrow {
   font-size: 2em;
   cursor: pointer;
@@ -43,7 +46,6 @@
   transform: translateY(-50%);
   z-index: 999;
   /* Noolte kindel väljatoomine teiste elementide peale*/
-
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -52,10 +54,12 @@
   border-radius: 0 3px 3px 0;
 }
 
+/* Noolte värv selle peale minnes */
 .arrow:hover {
   background-color: #76b6de;
 }
 
+/* Noolte paigutus äärtest */
 #left-arrow {
   left: 10px;
 }
@@ -81,6 +85,7 @@
   font-weight: bold;
   color: #1B4965;
   padding: 40px;
+  /* Allikas (kast teksti ümber): https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
   box-shadow:
     inset #1B4965 0 0 0 5px,
     inset #225270 0 0 0 1px,
@@ -93,6 +98,7 @@
   text-shadow: 3px 3px 1px #98c9e6;
 }
 
+/* Teksti kujundus navigeerimismenüü peal */
 .nav-menu a {
   text-decoration: none;
   color: #1B4965;
@@ -120,23 +126,18 @@
   /* Ääre värvi muutumine olles kursoriga selle peal */
 }
 
-.font {
-  font-family: 'Oswald', sans-serif;
-}
-
+/* Tausta värv */
 body {
   color: #1b4965;
   background: #CAE9FF
 }
 
+/* Esimese astme pealkirja (main pealkiri, koerad, kassid, muud loomad) kujundus */
 .h1 {
   text-align: center;
   padding: 10px;
-  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
 
-  /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
+  /* Allikas (kast teksti ümber): https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
   background: #CAE9FF;
   font-family: 'Abril Fatface', cursive;
   font-size: 48px;
@@ -156,13 +157,15 @@ body {
   text-shadow: 3px 3px 1px #98c9e6;
 }
 
+/* Pealehe (LoomaCV) kasti asetus */
 #pl {
   max-width: 500px;
   margin: 20px auto 20px auto;
 }
 
+/* Loomade info teksti kujundus */
 .tekst {
-  /*https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
+  /* Allikas (kast teksti ümber): https://codepen.io/HighFlyer/pen/QWmwBaG?editors=1100*/
   font-weight: bold;
   color: #1b4965;
   padding: 40px;
@@ -178,6 +181,7 @@ body {
   text-shadow: 3px 3px 1px #bfecf7;
 }
 
+/* Suurelt kuvatava pildi kujundus ja asetus */
 #full-image {
   max-width: 100%;
   margin-bottom: 10px;
@@ -214,6 +218,7 @@ html {
   background-size: cover;
 }
 
+/* Pealehe teksti ja kastide asetus */
 .caption {
   position: absolute;
   left: 50%;
@@ -221,23 +226,12 @@ html {
   width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #000;
-  font-family: "Oswald", sans-serif;
   font-size: 36px;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
   padding: 20px;
   border-radius: 10px;
   font-size: 25px;
   letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
 }
